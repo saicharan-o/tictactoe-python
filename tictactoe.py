@@ -209,6 +209,7 @@ class TicTacToeGUI:
                 board[row][col] = " " 
                 best = min(best, score) 
             return best 
+
  
     def hard_ai(self, board): 
         best_score = -math.inf 
@@ -222,6 +223,7 @@ class TicTacToeGUI:
                 best_move = (row, col) 
         return best_move 
  
+
     def medium_ai(self, board): 
         return self.easy_ai(board) if random.random() < 0.5 else self.hard_ai(board) 
  
@@ -232,7 +234,7 @@ class TicTacToeGUI:
 return self.medium_ai(board) 
 elif difficulty == "hard": 
 return self.hard_ai(board) 
-# Run the application 
+
 if __name__ == "__main__": 
 root = tk.Tk() 
 game = TicTacToeGUI(root) 
