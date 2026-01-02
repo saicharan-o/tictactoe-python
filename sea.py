@@ -5,3 +5,6 @@ import pandas as pd
 plt.style.use("classic")
 d=sn.load_dataset("car_crashes")
 print(d.head())
+sn.relplot(x="total",y="speeding",kind="scatter",data=d)
+sn.relplot(x="total",y="speeding",hue="abbrev",data=d)
+plt.show()
