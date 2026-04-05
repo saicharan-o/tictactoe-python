@@ -54,11 +54,10 @@ class TicTacToeGUI:
         score_frame.pack(pady=5) 
          
         self.score_label = tk.Label( 
-            score_frame, 
-            text=f"Wins: {self.scores['Wins']}  Losses: {self.scores['Losses']}  Draws: 
-{self.scores['Draws']}", 
-            font=("Arial", 10) 
-        ) 
+    score_frame, 
+    text=f"Wins: {self.scores['Wins']}  Losses: {self.scores['Losses']}  Draws: {self.scores['Draws']}", 
+    font=("Arial", 10) 
+)
         self.score_label.pack() 
          
         # Game board 
@@ -152,8 +151,7 @@ class TicTacToeGUI:
      
     def update_score(self): 
         self.score_label.config( 
-            text=f"Wins: {self.scores['Wins']}  Losses: {self.scores['Losses']}  Draws: 
-{self.scores['Draws']}" 
+            text=f"Wins: {self.scores['Wins']}  Losses: {self.scores['Losses']}  Draws: {self.scores['Draws']}" 
         ) 
      
     def reset_game(self): 
@@ -167,11 +165,12 @@ class TicTacToeGUI:
     # --------- Game Logic (from original code) --------- 
     def check_winner(self, player): 
         for i in range(3): 
-            if all(self.board[i][j] == player for j in range(3)) or \ 
-               all(self.board[j][i] == player for j in range(3)): 
+            if (all(self.board[i][j] == player for j in range(3)) or  
+               all(self.board[j][i] == player for j in range(3))): 
+                
                 return True 
-        if all(self.board[i][i] == player for i in range(3)) or \ 
-           all(self.board[i][2 - i] == player for i in range(3)): 
+        if ( all(self.board[i][i] == player for i in range(3)) or  
+           all(self.board[i][2 - i] == player for i in range(3)) ): 
             return True 
         return False 
  
@@ -231,11 +230,11 @@ class TicTacToeGUI:
         if difficulty == "easy": 
             return self.easy_ai(board) 
         elif difficulty == "medium": 
-return self.medium_ai(board) 
-elif difficulty == "hard": 
-return self.hard_ai(board) 
+            return self.medium_ai(board) 
+        elif difficulty == "hard": 
+            return self.hard_ai(board) 
 
 if __name__ == "__main__": 
-root = tk.Tk() 
-game = TicTacToeGUI(root) 
-root.mainloop()
+    r= tk.Tk() 
+    game = TicTacToeGUI(r) 
+    r.mainloop()
