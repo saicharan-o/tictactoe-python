@@ -153,7 +153,6 @@ class TicTacToeGUI:
             for j in range(3): 
                 self.buttons[i][j].config(text=" ", state=tk.NORMAL, fg="black") 
      
-    # --------- Game Logic (from original code) --------- 
     def check_winner(self, player): 
         for i in range(3): 
             if (all(self.board[i][j] == player for j in range(3)) or  
