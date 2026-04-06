@@ -74,7 +74,6 @@ class TicTacToeGUI:
                 row.append(button) 
             self.buttons.append(row) 
          
-        # Reset button 
         reset_frame = tk.Frame(self.root) 
         reset_frame.pack(pady=10) 
          
