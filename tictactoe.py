@@ -14,9 +14,8 @@ class TicTacToeGUI:
         self.current_player = "X" 
         self.game_over = False 
         self.scores = {"Wins": 0, "Losses": 0, "Draws": 0} 
-        self.difficulty = "medium"  # Default difficulty 
-         
-        # Create GUI elements 
+        self.difficulty = "medium" 
+        
         self.create_widgets() 
          
     def create_widgets(self): 
