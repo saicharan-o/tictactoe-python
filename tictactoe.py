@@ -45,7 +45,6 @@ class TicTacToeGUI:
         diff_menu.pack(side=tk.LEFT, padx=5) 
         diff_menu.bind("<<ComboboxSelected>>", self.change_difficulty) 
          
-        # Score display 
         score_frame = tk.Frame(self.root) 
         score_frame.pack(pady=5) 
          
