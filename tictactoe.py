@@ -15,11 +15,10 @@ class TicTacToeGUI:
         self.game_over = False 
         self.scores = {"Wins": 0, "Losses": 0, "Draws": 0} 
         self.difficulty = "medium" 
-        
+
         self.create_widgets() 
          
     def create_widgets(self): 
-        # Title frame 
         title_frame = tk.Frame(self.root) 
         title_frame.pack(pady=10) 
          
