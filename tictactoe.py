@@ -55,7 +55,6 @@ class TicTacToeGUI:
 )
         self.score_label.pack() 
          
-        # Game board 
         self.board_frame = tk.Frame(self.root) 
         self.board_frame.pack(pady=10) 
          
