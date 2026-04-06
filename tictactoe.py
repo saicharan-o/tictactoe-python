@@ -10,7 +10,6 @@ class TicTacToeGUI:
         self.root.geometry("400x500") 
         self.root.resizable(False, False) 
          
-        # Game variables 
         self.board = [[" " for _ in range(3)] for _ in range(3)] 
         self.current_player = "X" 
         self.game_over = False 
