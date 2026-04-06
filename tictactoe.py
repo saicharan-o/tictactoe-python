@@ -110,8 +110,7 @@ class TicTacToeGUI:
             messagebox.showinfo("Game Over", "It's a draw!") 
             return 
          
-        # AI move 
-        self.root.after(500, self.ai_move)  # Small delay for better UX 
+        self.root.after(500, self.ai_move)  
      
     def ai_move(self): 
         if self.game_over: 
