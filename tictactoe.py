@@ -29,7 +29,6 @@ class TicTacToeGUI:
         ) 
         self.title_label.pack() 
          
-        # Difficulty selection 
         diff_frame = tk.Frame(self.root) 
         diff_frame.pack(pady=5) 
          
