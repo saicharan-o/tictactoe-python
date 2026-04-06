@@ -93,8 +93,7 @@ class TicTacToeGUI:
     def on_click(self, row, col): 
         if self.game_over or self.board[row][col] != " ": 
             return 
-         
-        # Human move 
+        
         self.make_move(row, col, "X") 
          
         if self.check_winner("X"): 
