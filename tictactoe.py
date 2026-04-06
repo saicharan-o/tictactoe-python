@@ -169,8 +169,7 @@ class TicTacToeGUI:
  
     def get_available_moves(self, board): 
         return [(r, c) for r in range(3) for c in range(3) if board[r][c] == " "] 
- 
-    # --------- AI Strategies (from original code) --------- 
+
     def easy_ai(self, board): 
         return random.choice(self.get_available_moves(board)) 
  
